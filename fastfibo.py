@@ -5,7 +5,7 @@ def fast(n):
     hprv, hcur = fast(m)
     prev = hprv*hprv + hcur* hcur
     curr = hcur*(2*hprv + hcur)
-    next  = prev + curr
+    next = prev + curr
     if n%2 == 0:
         return prev, curr
     else:
